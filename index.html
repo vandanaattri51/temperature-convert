@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temprature Convertor Website</title>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v6.1.2/js/all.js"
+      integrity="sha384-11X1bEJVFeFtn94r1jlvSC7tlJkV2VJctorjswdLzqOJ6ZvYBSZQkaQVXG0R4Flt"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+
+  <body>
+    <!-- This is a Temprature Convertor Website Designed & Developed by Jatin -->
+    <h1 class="title">Temperature Converter</h1>
+
+    <!-- Input an convert controls -->
+    <div class="container">
+      <div class="boxcontainer">
+        <div class="box1">
+          <p>Enter Temperature</p>
+          <input
+            type="number"
+            class="tempInput"
+            placeholder="Enter temperature"
+            id="tempInput"
+          />
+        </div>
+        <div class="box1">
+          <p>Select Type</p>
+          <select name="temp-types" id="unit">
+            <option value="Celsius">Celsius</option>
+            <option value="Fahrenheit">Fahrenheit</option>
+            <option value="Kelvin">Kelvin</option>
+          </select>
+        </div>
+      </div>
+      <button onclick="temprature()" class="button">Convert</button>
+    </div>
+
+    <!-- Output containers -->
+    <div class="units">
+      <div class="panel p-1">
+        <h1 class="bg-unit">°C</h1>
+        <h2>Celsius</h2>
+        <input type="number" id="celsius" disabled />
+      </div>
+      <div class="panel p-2">
+        <h1 class="bg-unit">°F</h1>
+        <h2>Fahrenheit</h2>
+        <input type="number" id="fahrenheit" disabled />
+      </div>
+      <div class="panel p-3">
+        <h1 class="bg-unit">°K</h1>
+        <h2>Kelvin</h2>
+        <input type="number" id="kelvin" disabled />
+      </div>
+    </div>
+
+    <!-- Footer / Copyright  -->
+    <div class="copyright p-1">
+      <p>&#10523; Designed and developed with ❤️ by Vandana &#10524;</p>
+    </div>
+
+    <!-- Scripts here -->
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </body>
+</html>
